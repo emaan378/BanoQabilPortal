@@ -1,0 +1,248 @@
+/* Semantic styles for AdminUsers.jsx — visually matched to AdminTeachers.css */
+
+.AdminUsers-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.AdminUsers-div-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.AdminUsers-button-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background-color: #f59e0b;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.AdminUsers-button-2:hover {
+  background-color: #d97706;
+}
+
+.AdminUsers-plus-3 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.AdminUsers-div-5 {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.AdminUsers-div-6 {
+  overflow-x: auto;
+}
+
+.AdminUsers-table-7 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.AdminUsers-tr-8 {
+  background-color: #f8fafc;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.AdminUsers-th-9 {
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.25rem;
+}
+
+.AdminUsers-tbody-10 > :not([hidden]) ~ :not([hidden]) {
+  border-top: 1px solid #f8fafc;
+}
+
+.AdminUsers-tr-11 {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.AdminUsers-tr-11:hover {
+  background-color: rgba(248, 250, 252, 0.6);
+}
+
+.AdminUsers-td-12 {
+  padding: 0.875rem 1.25rem;
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+
+.AdminUsers-div-13 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.AdminUsers-div-14 {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.AdminUsers-p-15 {
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.25rem;
+}
+
+.AdminUsers-p-16 {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  line-height: 1.1rem;
+}
+
+.AdminUsers-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.AdminUsers-role-super {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.AdminUsers-role-campus {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.AdminUsers-role-other {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.AdminUsers-crown-17 {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.AdminUsers-campus-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: #f0fdf4;
+  color: #15803d;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.AdminUsers-building-18 {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.AdminUsers-dash {
+  color: #cbd5e1;
+}
+
+.AdminUsers-button-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.625rem;
+  color: #ef4444;
+  transition: background-color 150ms;
+}
+
+.AdminUsers-button-delete:hover {
+  background: #fef2f2;
+}
+
+.AdminUsers-trash-19 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.AdminUsers-you-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  background: #f8fafc;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+.AdminUsers-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.AdminUsers-button-cancel {
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #475569;
+  background: #f1f5f9;
+  transition: background-color 150ms;
+}
+
+.AdminUsers-button-cancel:hover {
+  background: #e2e8f0;
+}
+
+.AdminUsers-button-save {
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+  background: #f59e0b;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+  transition: background-color 150ms;
+}
+
+.AdminUsers-button-save:hover {
+  background: #d97706;
+}
+
+.AdminUsers-button-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.AdminUsers-hint {
+  margin-top: 0.375rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #64748b;
+}

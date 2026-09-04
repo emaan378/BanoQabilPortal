@@ -1,0 +1,548 @@
+/* Semantic styles for AdminRegistrations.jsx (converted from Tailwind utility classes) */
+
+.AdminRegistrations-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.AdminRegistrations-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.AdminRegistrations-h1-2 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-3 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-top: 0.125rem;
+}
+
+.AdminRegistrations-div-5 {
+position: relative;
+max-width: 28rem;
+}
+
+.AdminRegistrations-search-6 {
+position: absolute;
+left: 1rem;
+top: 50%;
+--tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-input-7 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 2.75rem;
+padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.AdminRegistrations-input-7:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
+--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+--tw-ring-opacity: 1;
+  --tw-ring-color: rgb(254 243 199 / var(--tw-ring-opacity));
+}
+
+.AdminRegistrations-div-8 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.AdminRegistrations-div-9 {
+overflow-x: auto;
+}
+
+.AdminRegistrations-table-10 {
+width: 100%;
+}
+
+.AdminRegistrations-tr-11 {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.AdminRegistrations-th-12 {
+text-align: left;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-transform: uppercase;
+letter-spacing: 0.05em;
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminRegistrations-tbody-13 > :not([hidden]) ~ :not([hidden]) {
+--tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+--tw-divide-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-divide-opacity));
+}
+
+.AdminRegistrations-tr-14 {
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminRegistrations-tr-14:hover {
+background-color: rgb(248 250 252 / 0.5);
+}
+
+.AdminRegistrations-td-15 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-td-16 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminRegistrations-p-17 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-18 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-td-19 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-button-20 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+display: flex;
+align-items: center;
+gap: 0.125rem;
+}
+
+.AdminRegistrations-button-20:hover {
+--tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-chevronright-21 {
+width: 0.75rem;
+height: 0.75rem;
+}
+
+.AdminRegistrations-div-22 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+text-align: center;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-div-23 {
+position: fixed;
+inset: 0px;
+z-index: 50;
+display: flex;
+justify-content: flex-end;
+}
+
+.AdminRegistrations-div-24 {
+position: absolute;
+inset: 0px;
+background-color: rgb(0 0 0 / 0.4);
+}
+
+.AdminRegistrations-div-25 {
+position: relative;
+width: 100%;
+max-width: 28rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow-y: auto;
+}
+
+.AdminRegistrations-div-26 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.AdminRegistrations-div-27 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.AdminRegistrations-userplus-28 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-h3-29 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminRegistrations-button-30 {
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+font-size: 1.25rem;
+  line-height: 1.75rem;
+line-height: 1;
+}
+
+.AdminRegistrations-button-30:hover {
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-div-31 {
+padding: 1.5rem;
+}
+
+.AdminRegistrations-div-31 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.AdminRegistrations-div-32 {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.AdminRegistrations-div-33 {
+width: 3.5rem;
+height: 3.5rem;
+border-radius: 1rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.25rem;
+  line-height: 1.75rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-34 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.AdminRegistrations-div-35 {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminRegistrations-p-36 {
+font-weight: 500;
+--tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-div-37 {
+--tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+border-radius: 0.75rem;
+padding: 1rem;
+}
+
+.AdminRegistrations-div-38 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+margin-bottom: 0.25rem;
+}
+
+.AdminRegistrations-calendar-39 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-40 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-41 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-42 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+margin-top: 0.25rem;
+}
+
+.AdminRegistrations-div-43 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 251 235 / var(--tw-bg-opacity));
+border-radius: 0.75rem;
+padding: 1rem;
+}
+
+.AdminRegistrations-checkcircle2-44 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-45 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(120 53 15 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-p-46 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity));
+}
+
+.AdminRegistrations-div-47 {
+padding-top: 0.5rem;
+}
+
+.AdminRegistrations-div-47 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.AdminRegistrations-p-48 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+
+.AdminRegistrations-button-49 {
+width: 100%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.AdminRegistrations-button-49:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+
+.AdminRegistrations-chevronright-50 {
+width: 1rem;
+height: 1rem;
+}
+
+.AdminRegistrations-button-51 {
+width: 100%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.AdminRegistrations-button-51:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.AdminRegistrations-button-52 {
+width: 100%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-weight: 600;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminRegistrations-button-52:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+/* Stage badge (converted from dynamic Tailwind classes in pipelineStages data) */
+.AdminRegistrations-badge {
+font-size: 10px;
+font-weight: 600;
+padding: 0.125rem 0.5rem;
+border-radius: 9999px;
+display: inline-block;
+}
+
+.AdminRegistrations-badge--registered {
+background-color: #f1f5f9;
+color: #475569;
+}
+
+.AdminRegistrations-badge--test-scheduled {
+background-color: #eff6ff;
+color: #2563eb;
+}
+
+.AdminRegistrations-badge--interview-passed {
+background-color: #fffbeb;
+color: #d97706;
+}
+
+.AdminRegistrations-badge--fee-verified {
+background-color: #f0fdfa;
+color: #0d9488;
+}
+
+.AdminRegistrations-badge--enrolled {
+background-color: #ecfdf5;
+color: #059669;
+}

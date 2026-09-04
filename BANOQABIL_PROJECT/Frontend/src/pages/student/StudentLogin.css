@@ -1,0 +1,428 @@
+/* Semantic styles for StudentLogin.jsx (converted from Tailwind utility classes) */
+
+.StudentLogin-div-1 {
+min-height: 100vh;
+display: flex;
+}
+
+.StudentLogin-div-2 {
+display: none;
+--tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+flex-direction: column;
+justify-content: space-between;
+padding: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .StudentLogin-div-2 {
+  display: flex;
+  width: 41.666667%;
+  }
+}
+
+.StudentLogin-div-3 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.StudentLogin-div-4 {
+width: 2rem;
+height: 2rem;
+border-radius: 0.5rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.StudentLogin-graduationcap-5 {
+width: 1.25rem;
+height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.StudentLogin-span-6 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.StudentLogin-h2-7 {
+font-size: 2.25rem;
+  line-height: 2.5rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+line-height: 1.25;
+margin-bottom: 1.25rem;
+}
+
+.StudentLogin-span-8 {
+--tw-text-opacity: 1;
+  color: rgb(251 191 36 / var(--tw-text-opacity));
+}
+
+.StudentLogin-p-9 {
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+line-height: 1.625;
+margin-bottom: 2.5rem;
+}
+
+.StudentLogin-div-10 {
+display: flex;
+gap: 2.5rem;
+}
+
+.StudentLogin-p-11 {
+--tw-text-opacity: 1;
+  color: rgb(251 191 36 / var(--tw-text-opacity));
+font-weight: 800;
+font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.StudentLogin-p-12 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+margin-top: 0.125rem;
+}
+
+.StudentLogin-div-13 {
+background-color: rgb(255 255 255 / 0.05);
+border-radius: 0.75rem;
+padding: 1rem;
+border-width: 1px;
+border-color: rgb(255 255 255 / 0.1);
+}
+
+.StudentLogin-p-14 {
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.StudentLogin-p-15 {
+--tw-text-opacity: 1;
+  color: rgb(52 211 153 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+margin-top: 0.5rem;
+}
+
+.StudentLogin-div-16 {
+flex: 1 1 0%;
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+display: flex;
+flex-direction: column;
+}
+
+.StudentLogin-div-17 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.StudentLogin-button-18 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.StudentLogin-button-18:hover {
+--tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.StudentLogin-arrowleft-19 {
+width: 1rem;
+height: 1rem;
+}
+
+.StudentLogin-div-20 {
+flex: 1 1 0%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.StudentLogin-div-21 {
+width: 100%;
+max-width: 28rem;
+}
+
+.StudentLogin-div-22 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .StudentLogin-div-22 {
+  display: none;
+  }
+}
+
+.StudentLogin-span-23 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.StudentLogin-h2-24 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+margin-bottom: 0.25rem;
+}
+
+.StudentLogin-p-25 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-bottom: 2rem;
+}
+
+.StudentLogin-form-26 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.StudentLogin-label-27 {
+display: block;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+margin-bottom: 0.375rem;
+}
+
+.StudentLogin-input-28 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.StudentLogin-input-28:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
+--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+--tw-ring-opacity: 1;
+  --tw-ring-color: rgb(209 250 229 / var(--tw-ring-opacity));
+}
+
+.StudentLogin-div-29 {
+position: relative;
+}
+
+.StudentLogin-input-30 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+padding-right: 3rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.StudentLogin-input-30:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
+--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+--tw-ring-opacity: 1;
+  --tw-ring-color: rgb(209 250 229 / var(--tw-ring-opacity));
+}
+
+.StudentLogin-button-31 {
+position: absolute;
+right: 1rem;
+top: 50%;
+--tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.StudentLogin-button-31:hover {
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.StudentLogin-button-32 {
+width: 100%;
+padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+border-radius: 0.75rem;
+transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.StudentLogin-button-32:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+--tw-shadow-color: rgb(5 150 105 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.StudentLogin-div-33 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 1.25rem;
+}
+
+.StudentLogin-button-34 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.StudentLogin-button-34:hover {
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.StudentLogin-div-35 {
+margin-top: 2rem;
+padding-top: 1.5rem;
+border-top-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+
+.StudentLogin-p-36 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.StudentLogin-div-37 {
+display: flex;
+gap: 0.75rem;
+}
+
+.StudentLogin-button-38 {
+flex: 1 1 0%;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.5rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.StudentLogin-button-38:hover {
+--tw-border-opacity: 1;
+  border-color: rgb(94 234 212 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
+.StudentLogin-button-39 {
+flex: 1 1 0%;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.5rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.StudentLogin-button-39:hover {
+--tw-border-opacity: 1;
+  border-color: rgb(252 211 77 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}

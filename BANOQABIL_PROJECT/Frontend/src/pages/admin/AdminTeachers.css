@@ -1,0 +1,618 @@
+/* Semantic styles for AdminTeachers.jsx (converted from Tailwind utility classes) */
+
+.AdminTeachers-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.AdminTeachers-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.AdminTeachers-button-2 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminTeachers-button-2:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+
+.AdminTeachers-plus-3 {
+width: 1rem;
+height: 1rem;
+}
+
+.AdminTeachers-search-wrap {
+position: relative;
+}
+
+.AdminTeachers-search-icon {
+position: absolute;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+width: 1rem;
+height: 1rem;
+color: #94a3b8;
+}
+
+.AdminTeachers-search-input {
+width: 100%;
+border: 1px solid #e2e8f0;
+border-radius: 0.75rem;
+padding: 0.625rem 1rem 0.625rem 2.75rem;
+font-size: 0.875rem;
+line-height: 1.25rem;
+background-color: #fff;
+}
+
+.AdminTeachers-search-input:focus {
+outline: 2px solid transparent;
+outline-offset: 2px;
+border-color: #f59e0b;
+box-shadow: 0 0 0 4px rgb(254 243 199 / 1);
+}
+
+.AdminTeachers-div-4 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.AdminTeachers-div-5 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.AdminTeachers-div-6 {
+overflow-x: auto;
+}
+
+.AdminTeachers-table-7 {
+width: 100%;
+}
+
+.AdminTeachers-tr-8 {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.AdminTeachers-th-9 {
+text-align: left;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-transform: uppercase;
+letter-spacing: 0.05em;
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminTeachers-tbody-10 > :not([hidden]) ~ :not([hidden]) {
+--tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+--tw-divide-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-divide-opacity));
+}
+
+.AdminTeachers-tr-11 {
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminTeachers-tr-11:hover {
+background-color: rgb(248 250 252 / 0.5);
+}
+
+.AdminTeachers-td-12 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminTeachers-div-13 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.AdminTeachers-div-14 {
+width: 2rem;
+height: 2rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(204 251 241 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+flex-shrink: 0;
+}
+
+.AdminTeachers-p-15 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-p-16 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-td-17 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-div-18 {
+display: flex;
+gap: 0.25rem;
+}
+
+.AdminTeachers-button-19 {
+width: 2rem;
+height: 2rem;
+border-radius: 0.5rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.AdminTeachers-button-19:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.AdminTeachers-eye-20 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-button-21 {
+width: 2rem;
+height: 2rem;
+border-radius: 0.5rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.AdminTeachers-button-21:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+}
+
+.AdminTeachers-trash2-22 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-div-23 {
+padding: 1.5rem;
+}
+
+.AdminTeachers-div-23 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.AdminTeachers-div-24 {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+}
+
+.AdminTeachers-div-25 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-top-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+gap: 0.75rem;
+}
+
+.AdminTeachers-button-26 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-weight: 600;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminTeachers-button-26:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.AdminTeachers-button-27 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminTeachers-button-27:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+
+.AdminTeachers-div-28 {
+position: fixed;
+inset: 0px;
+z-index: 50;
+display: flex;
+justify-content: flex-end;
+}
+
+.AdminTeachers-div-29 {
+position: absolute;
+inset: 0px;
+background-color: rgb(0 0 0 / 0.4);
+}
+
+.AdminTeachers-div-30 {
+position: relative;
+width: 100%;
+max-width: 28rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow-y: auto;
+}
+
+.AdminTeachers-div-31 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0px;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+z-index: 10;
+}
+
+.AdminTeachers-h3-32 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminTeachers-button-33 {
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-button-33:hover {
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-x-34 {
+width: 1.25rem;
+height: 1.25rem;
+}
+
+.AdminTeachers-div-35 {
+padding: 1.5rem;
+}
+
+.AdminTeachers-div-35 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.AdminTeachers-div-36 {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.AdminTeachers-div-37 {
+width: 3.5rem;
+height: 3.5rem;
+border-radius: 1rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(204 251 241 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.25rem;
+  line-height: 1.75rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-p-38 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.AdminTeachers-div-39 {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminTeachers-p-40 {
+font-weight: 500;
+--tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-div-41 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 0.75rem;
+}
+
+.AdminTeachers-button-42 {
+display: flex;
+align-items: center;
+gap: 0.25rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+--tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+padding-left: 0.75rem;
+  padding-right: 0.75rem;
+padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+border-radius: 0.5rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminTeachers-button-42:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.AdminTeachers-upload-43 {
+width: 0.875rem;
+height: 0.875rem;
+}
+
+.AdminTeachers-p-44 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+padding-top: 1rem;
+  padding-bottom: 1rem;
+text-align: center;
+}
+
+.AdminTeachers-div-45 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.AdminTeachers-div-46 {
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding: 0.75rem;
+display: flex;
+align-items: center;
+gap: 0.75rem;
+}
+
+.AdminTeachers-div-47 {
+width: 2rem;
+height: 2rem;
+border-radius: 0.5rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.AdminTeachers-filetext-48 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-div-49 {
+flex: 1 1 0%;
+min-width: 0px;
+}
+
+.AdminTeachers-p-50 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.AdminTeachers-sicon-51 {
+width: 0.75rem;
+height: 0.75rem;
+}
+
+.AdminTeachers-button-52 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+flex-shrink: 0;
+}
+
+.AdminTeachers-button-52:hover {
+--tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-button-53 {
+--tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+flex-shrink: 0;
+}
+
+.AdminTeachers-button-53:hover {
+--tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
+.AdminTeachers-button-54 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminTeachers-button-54:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.AdminTeachers-doc-badge {
+display: inline-flex;
+align-items: center;
+gap: 0.25rem;
+font-size: 10px;
+font-weight: 600;
+padding: 0.125rem 0.5rem;
+border-radius: 9999px;
+border: 1px solid transparent;
+flex-shrink: 0;
+}
+
+.AdminTeachers-doc-badge--verified { background-color: #ecfdf5; color: #059669; border-color: #d1fae5; }
+.AdminTeachers-doc-badge--pending { background-color: #fffbeb; color: #d97706; border-color: #fef3c7; }
+.AdminTeachers-doc-badge--rejected { background-color: #fef2f2; color: #dc2626; border-color: #fee2e2; }

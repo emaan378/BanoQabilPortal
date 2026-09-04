@@ -1,0 +1,731 @@
+/* Semantic styles for TeacherAssignments.jsx (converted from Tailwind utility classes) */
+
+.TeacherAssignments-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.TeacherAssignments-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.TeacherAssignments-div-2 {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+
+.TeacherAssignments-h1-3 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-p-4 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-top: 0.125rem;
+}.TeacherAssignments-button-5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: rgb(13, 148, 136); /* Solid Teal background */
+  color: rgb(255, 255, 255);         /* Solid White text */
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+.TeacherAssignments-button-5:hover {
+  background-color: rgb(15, 118, 110); /* Darker teal on hover */
+}
+
+.TeacherAssignments-plus-6 {
+width: 1rem;
+height: 1rem;
+}
+
+.TeacherAssignments-div-7 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.TeacherAssignments-div-8 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.TeacherAssignments-div-9 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 1rem;
+}
+
+.TeacherAssignments-div-10 {
+display: flex;
+gap: 0.75rem;
+min-width: 0px;
+}
+
+.TeacherAssignments-div-11 {
+width: 2.25rem;
+height: 2.25rem;
+border-radius: 0.75rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(240 253 250 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.TeacherAssignments-clipboardlist-12 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-div-13 {
+min-width: 0px;
+}
+
+.TeacherAssignments-p-14 {
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.TeacherAssignments-p-15 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+margin-top: 0.125rem;
+}
+
+.TeacherAssignments-button-16 {
+flex-shrink: 0;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+display: flex;
+align-items: center;
+gap: 0.25rem;
+}
+
+.TeacherAssignments-button-16:hover {
+--tw-text-opacity: 1;
+  color: rgb(15 118 110 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-download-17 {
+width: 0.75rem;
+height: 0.75rem;
+}
+
+.TeacherAssignments-div-18 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-bottom: 1rem;
+display: flex;
+gap: 0.5rem;
+}
+
+.TeacherAssignments-span-19 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+padding-left: 0.625rem;
+  padding-right: 0.625rem;
+padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 251 235 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(254 243 199 / var(--tw-border-opacity));
+}
+
+.TeacherAssignments-span-20 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+padding-left: 0.625rem;
+  padding-right: 0.625rem;
+padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(236 253 245 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(209 250 229 / var(--tw-border-opacity));
+}
+
+.TeacherAssignments-span-21 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+padding-left: 0.625rem;
+  padding-right: 0.625rem;
+padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(254 226 226 / var(--tw-border-opacity));
+}
+
+.TeacherAssignments-div-22 {
+position: fixed;
+inset: 0px;
+z-index: 50;
+display: flex;
+justify-content: flex-end;
+}
+
+.TeacherAssignments-div-23 {
+position: absolute;
+inset: 0px;
+background-color: rgb(0 0 0 / 0.4);
+}
+
+.TeacherAssignments-div-24 {
+position: relative;
+width: 100%;
+max-width: 32rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow-y: auto;
+}
+
+.TeacherAssignments-div-25 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0px;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+z-index: 10;
+}
+
+.TeacherAssignments-div-26 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.TeacherAssignments-h3-27 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.TeacherAssignments-button-28 {
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+font-size: 1.25rem;
+  line-height: 1.75rem;
+line-height: 1;
+}
+
+.TeacherAssignments-button-28:hover {
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-div-29 {
+padding: 1.25rem;
+}
+
+.TeacherAssignments-div-30 {
+margin-bottom: 1rem;
+}
+
+.TeacherAssignments-p-31 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-div-32 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.TeacherAssignments-div-33 {
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding: 1rem;
+}
+
+.TeacherAssignments-div-34 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 0.75rem;
+}
+
+.TeacherAssignments-div-35 {
+width: 1.75rem;
+height: 1.75rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-p-36 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-div-37 {
+--tw-bg-opacity: 1;
+  background-color: rgb(236 253 245 / var(--tw-bg-opacity));
+border-radius: 0.5rem;
+padding: 0.75rem;
+margin-bottom: 0.75rem;
+}
+
+.TeacherAssignments-star-38 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+fill: #059669;
+}
+
+.TeacherAssignments-span-39 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-p-40 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+margin-top: 0.25rem;
+}
+
+.TeacherAssignments-button-41 {
+display: flex;
+align-items: center;
+gap: 0.375rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+margin-bottom: 0.75rem;
+}
+
+.TeacherAssignments-button-41:hover {
+--tw-text-opacity: 1;
+  color: rgb(15 118 110 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-download-42 {
+width: 0.875rem;
+height: 0.875rem;
+}
+
+.TeacherAssignments-div-43 {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 0.5rem;
+}
+
+.TeacherAssignments-div-44 {
+grid-column: span 1 / span 1;
+}
+
+.TeacherAssignments-label-45 {
+display: block;
+font-size: 10px;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+margin-bottom: 0.25rem;
+}
+
+.TeacherAssignments-input-46 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.5rem;
+padding-left: 0.625rem;
+  padding-right: 0.625rem;
+padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.TeacherAssignments-input-46:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
+
+.TeacherAssignments-div-47 {
+grid-column: span 2 / span 2;
+}
+
+.TeacherAssignments-button-48 {
+margin-top: 0.5rem;
+width: 100%;
+padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  background-color: rgb(13, 148, 136);
+  color: rgb(255, 255, 255);
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+border-radius: 0.5rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.TeacherAssignments-button-48:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.TeacherAssignments-div-49 {
+position: fixed;
+inset: 0px;
+z-index: 50;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+}
+
+.TeacherAssignments-div-50 {
+position: relative;
+width: 100%;
+max-width: 32rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.TeacherAssignments-div-51 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.TeacherAssignments-div-52 {
+padding: 1.5rem;
+}
+
+.TeacherAssignments-div-52 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.TeacherAssignments-label-53 {
+display: block;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+margin-bottom: 0.375rem;
+}
+
+.TeacherAssignments-input-54 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.TeacherAssignments-input-54:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
+
+.TeacherAssignments-div-55 {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+}
+
+.TeacherAssignments-select-56 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.TeacherAssignments-select-56:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
+
+.TeacherAssignments-textarea-57 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+resize: none;
+}
+
+.TeacherAssignments-textarea-57:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
+
+.TeacherAssignments-button-58 {
+width: 100%;
+border-width: 2px;
+border-style: dashed;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 0.25rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.TeacherAssignments-button-58:hover {
+--tw-border-opacity: 1;
+  border-color: rgb(94 234 212 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
+}
+
+.TeacherAssignments-upload-59 {
+width: 1.25rem;
+height: 1.25rem;
+}
+
+.TeacherAssignments-span-60 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+}
+
+.TeacherAssignments-div-61 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-top-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+gap: 0.75rem;
+}
+
+.TeacherAssignments-button-62 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-weight: 600;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.TeacherAssignments-button-62:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.TeacherAssignments-button-63 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: rgb(13, 148, 136);
+  color: rgb(255, 255, 255);
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.TeacherAssignments-button-63:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.TeacherAssignments-attachment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0.625rem 0.75rem;
+  background: rgb(248 250 252);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(241 245 249);
+}
+
+.TeacherAssignments-file-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(13 148 136);
+}
+
+.TeacherAssignments-file-link:hover {
+  color: rgb(15 118 110);
+  text-decoration: underline;
+}
+
+.TeacherAssignments-file-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.TeacherAssignments-note {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: rgb(71 85 105);
+  margin-top: 0.25rem;
+  border-left-width: 2px;
+  border-color: rgb(204 251 241);
+  padding-left: 0.5rem;
+}

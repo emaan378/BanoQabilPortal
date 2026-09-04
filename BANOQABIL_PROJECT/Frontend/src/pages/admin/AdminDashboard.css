@@ -1,0 +1,297 @@
+/* Page wrapper */
+.AdminDashboard-div-1 {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Stat cards grid */
+.AdminDashboard-div-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .AdminDashboard-div-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .AdminDashboard-div-2 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Stat card */
+.AdminDashboard-div-3 {
+  background-color: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.AdminDashboard-p-4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 0.125rem;
+}
+
+.AdminDashboard-p-5 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* Recent Registrations panel */
+.AdminDashboard-div-6 {
+  background-color: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  overflow: hidden;
+}
+
+.AdminDashboard-div-7 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.AdminDashboard-users-8 {
+  width: 1rem;
+  height: 1rem;
+  color: #059669;
+}
+
+.AdminDashboard-h2-9 {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.875rem;
+}
+
+.AdminDashboard-p-10 {
+  padding: 1.25rem;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.AdminDashboard-div-11 {
+  display: flex;
+  flex-direction: column;
+}
+
+.AdminDashboard-div-12 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f8fafc;
+}
+
+.AdminDashboard-div-12:last-child {
+  border-bottom: none;
+}
+
+.AdminDashboard-div-13 {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background-color: #f1f5f9;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.AdminDashboard-div-14 {
+  flex: 1;
+  min-width: 0;
+}
+
+.AdminDashboard-p-15 {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #0f172a;
+}
+
+.AdminDashboard-p-16 {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.AdminDashboard-span-17 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  background-color: #f1f5f9;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+/* --- Clickable stat cards (expand/collapse) --- */
+.AdminDashboard-card-clickable {
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font: inherit;
+  appearance: none;
+  transition: box-shadow 150ms ease, border-color 150ms ease;
+}
+
+.AdminDashboard-card-clickable--active {
+  border-color: #059669;
+  box-shadow: 0 0 0 3px rgb(5 150 105 / 0.15);
+}
+
+.AdminDashboard-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AdminDashboard-icon-wrap {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.AdminDashboard-icon-wrap--emerald { background-color: #d1fae5; }
+.AdminDashboard-icon-wrap--emerald .AdminDashboard-icon { color: #059669; }
+.AdminDashboard-icon-wrap--teal { background-color: #ccfbf1; }
+.AdminDashboard-icon-wrap--teal .AdminDashboard-icon { color: #0d9488; }
+.AdminDashboard-icon-wrap--amber { background-color: #fef3c7; }
+.AdminDashboard-icon-wrap--amber .AdminDashboard-icon { color: #d97706; }
+.AdminDashboard-icon-wrap--blue { background-color: #dbeafe; }
+.AdminDashboard-icon-wrap--blue .AdminDashboard-icon { color: #2563eb; }
+.AdminDashboard-icon-wrap--purple { background-color: #ede9fe; }
+.AdminDashboard-icon-wrap--purple .AdminDashboard-icon { color: #7c3aed; }
+.AdminDashboard-icon-wrap--slate { background-color: #f1f5f9; }
+.AdminDashboard-icon-wrap--slate .AdminDashboard-icon { color: #475569; }
+.AdminDashboard-icon-wrap--orange { background-color: #ffedd5; }
+.AdminDashboard-icon-wrap--orange .AdminDashboard-icon { color: #ea580c; }
+.AdminDashboard-icon-wrap--indigo { background-color: #e0e7ff; }
+.AdminDashboard-icon-wrap--indigo .AdminDashboard-icon { color: #4f46e5; }
+.AdminDashboard-icon-wrap--red { background-color: #fee2e2; }
+.AdminDashboard-icon-wrap--red .AdminDashboard-icon { color: #dc2626; }
+
+.AdminDashboard-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.AdminDashboard-chevron {
+  width: 1rem;
+  height: 1rem;
+  color: #94a3b8;
+  transition: transform 150ms ease;
+}
+
+.AdminDashboard-chevron--open {
+  transform: rotate(180deg);
+}
+
+.AdminDashboard-detail-panel {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  overflow: hidden;
+}
+
+.AdminDashboard-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.AdminDashboard-detail-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.375rem;
+  display: flex;
+}
+
+.AdminDashboard-detail-close:hover {
+  background-color: #f1f5f9;
+}
+
+.AdminDashboard-detail-close-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #64748b;
+}
+
+.AdminDashboard-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid #f8fafc;
+}
+
+.AdminDashboard-row:last-child {
+  border-bottom: none;
+}
+
+.AdminDashboard-row-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background-color: #f1f5f9;
+  color: #334155;
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.AdminDashboard-row-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.AdminDashboard-row-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #0f172a;
+}
+
+.AdminDashboard-row-sub {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.AdminDashboard-row-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  background-color: #f1f5f9;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}

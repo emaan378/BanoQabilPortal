@@ -1,0 +1,124 @@
+/* Semantic styles for ConfirmDialog.jsx (converted from Tailwind utility classes) */
+
+.ConfirmDialog-div-1 {
+position: fixed;
+inset: 0px;
+z-index: 90;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+}
+
+.ConfirmDialog-div-2 {
+position: absolute;
+inset: 0px;
+background-color: rgb(0 0 0 / 0.4);
+}
+
+.ConfirmDialog-div-3 {
+position: relative;
+width: 100%;
+max-width: 24rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.ConfirmDialog-div-4 {
+padding: 1.5rem;
+}
+
+.ConfirmDialog-div-5 {
+width: 3rem;
+height: 3rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: auto;
+  margin-right: auto;
+margin-bottom: 1rem;
+}
+
+.ConfirmDialog-alerttriangle-6 {
+width: 1.5rem;
+height: 1.5rem;
+--tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.ConfirmDialog-h3-7 {
+font-size: 1.125rem;
+  line-height: 1.75rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+text-align: center;
+margin-bottom: 0.5rem;
+}
+
+.ConfirmDialog-p-8 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-align: center;
+margin-bottom: 1.5rem;
+}
+
+.ConfirmDialog-div-9 {
+display: flex;
+gap: 0.75rem;
+}
+
+.ConfirmDialog-button-10 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+font-weight: 600;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ConfirmDialog-button-10:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.ConfirmDialog-button-11 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ConfirmDialog-button-11:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}

@@ -1,0 +1,341 @@
+.TeacherPerformance-div-1 {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.TeacherPerformance-div-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.TeacherPerformance-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.TeacherPerformance-h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 800;
+  color: rgb(15 23 42);
+}
+
+.TeacherPerformance-p-sub {
+  color: rgb(100 116 139);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.125rem;
+}
+
+.TeacherPerformance-select {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgb(226 232 240);
+  background: #fff;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(15 23 42);
+  min-width: 12rem;
+}
+
+.TeacherPerformance-empty {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(100 116 139);
+  padding: 1rem 0;
+}
+
+.TeacherPerformance-table-wrap {
+  background: #fff;
+  border-radius: 1rem;
+  border-width: 1px;
+  border-color: rgb(241 245 249);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  overflow: hidden;
+}
+
+.TeacherPerformance-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.TeacherPerformance-tr-head {
+  background: rgb(248 250 252);
+}
+
+.TeacherPerformance-th {
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(100 116 139);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.TeacherPerformance-th-icon {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.25rem;
+  vertical-align: text-bottom;
+}
+
+.TeacherPerformance-tr {
+  border-top-width: 1px;
+  border-color: rgb(248 250 252);
+}
+
+.TeacherPerformance-td {
+  padding: 0.875rem 1rem;
+  vertical-align: middle;
+}
+
+.TeacherPerformance-student-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.TeacherPerformance-avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background: rgb(5 150 105);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.TeacherPerformance-student-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(15 23 42);
+}
+
+.TeacherPerformance-student-sub {
+  font-size: 0.75rem;
+  color: rgb(148 163 184);
+}
+
+.TeacherPerformance-metric {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(15 23 42);
+}
+
+.TeacherPerformance-metric-sub {
+  display: block;
+  font-size: 0.75rem;
+  color: rgb(148 163 184);
+  margin-top: 0.125rem;
+}
+
+.TeacherPerformance-assign {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.TeacherPerformance-assign-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgb(51 65 85);
+}
+
+.TeacherPerformance-assign-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.TeacherPerformance-assign-icon.emerald { color: rgb(5 150 105); }
+.TeacherPerformance-assign-icon.amber { color: rgb(217 119 6); }
+
+.TeacherPerformance-status-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  align-items: flex-start;
+}
+
+.TeacherPerformance-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgb(225 29 72);
+  background: rgb(255 241 242);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.TeacherPerformance-flag-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.TeacherPerformance-alert {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgb(180 83 9);
+  background: rgb(255 247 237);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.TeacherPerformance-alert-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.TeacherPerformance-expand {
+  padding: 0.375rem;
+  border-radius: 0.5rem;
+  color: rgb(100 116 139);
+  background: transparent;
+}
+
+.TeacherPerformance-expand:hover {
+  background: rgb(241 245 249);
+}
+
+.TeacherPerformance-expand-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.TeacherPerformance-tr.detail {
+  background: rgb(248 250 252);
+}
+
+.TeacherPerformance-td-detail {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.TeacherPerformance-detail-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+}
+
+.TeacherPerformance-detail-title {
+  font-weight: 700;
+  color: rgb(15 23 42);
+  font-size: 0.875rem;
+}
+
+.TeacherPerformance-detail-sub {
+  font-size: 0.75rem;
+  color: rgb(100 116 139);
+}
+
+.TeacherPerformance-subs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.TeacherPerformance-sub {
+  background: #fff;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgb(241 245 249);
+  padding: 0.875rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.TeacherPerformance-sub-main {
+  display: flex;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.TeacherPerformance-sub-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background: rgb(236 253 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.TeacherPerformance-sub-icon-svg {
+  width: 1rem;
+  height: 1rem;
+  color: rgb(5 150 105);
+}
+
+.TeacherPerformance-sub-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(15 23 42);
+}
+
+.TeacherPerformance-sub-meta {
+  font-size: 0.75rem;
+  color: rgb(148 163 184);
+  margin-top: 0.125rem;
+}
+
+.TeacherPerformance-sub-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.375rem;
+  flex-shrink: 0;
+}
+
+.TeacherPerformance-sub-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+}
+
+.TeacherPerformance-sub-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: rgb(180 83 9);
+}
+
+.TeacherPerformance-sub-score-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.TeacherPerformance-sub-feedback {
+  font-size: 0.75rem;
+  color: rgb(71 85 105);
+  max-width: 16rem;
+  text-align: right;
+}

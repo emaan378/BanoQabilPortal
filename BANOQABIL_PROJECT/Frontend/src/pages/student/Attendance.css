@@ -1,0 +1,241 @@
+/* Semantic styles for Attendance.jsx (converted from Tailwind utility classes) */
+
+.Attendance-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.Attendance-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.Attendance-h1-2 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.Attendance-p-3 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-top: 0.125rem;
+}
+
+.Attendance-div-4 {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .Attendance-div-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.Attendance-div-5 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+padding: 1.25rem;
+}
+
+.Attendance-p-6 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+margin-bottom: 0.25rem;
+}
+
+.Attendance-div-7 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.Attendance-div-8 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.Attendance-div-9 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.Attendance-calendarcheck-10 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.Attendance-h2-11 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.Attendance-button-12 {
+width: 1.75rem;
+height: 1.75rem;
+border-radius: 0.5rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Attendance-button-12:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.Attendance-chevronleft-13 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.Attendance-div-14 {
+padding: 1.5rem;
+}
+
+.Attendance-div-15 {
+display: grid;
+grid-template-columns: repeat(7, minmax(0, 1fr));
+gap: 0.5rem;
+margin-bottom: 0.75rem;
+}
+
+.Attendance-div-16 {
+text-align: center;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.Attendance-div-17 {
+display: grid;
+grid-template-columns: repeat(7, minmax(0, 1fr));
+gap: 0.5rem;
+}
+
+.Attendance-div-18 {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 1rem;
+margin-top: 1.5rem;
+padding-top: 1rem;
+border-top-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-border-opacity));
+}
+
+.Attendance-span-19 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-weight: 500;
+}
+
+.Attendance-div-20 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+padding: 1.5rem;
+}
+
+.Attendance-h3-21 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-bottom: 1rem;
+}
+
+.Attendance-div-22 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.Attendance-div-23 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-border-opacity));
+}
+
+.Attendance-span-24 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.Attendance-span-25 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.Attendance-div-26 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}

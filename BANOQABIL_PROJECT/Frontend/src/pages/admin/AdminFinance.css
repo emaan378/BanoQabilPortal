@@ -1,0 +1,586 @@
+/* Semantic styles for AdminFinance.jsx (converted from Tailwind utility classes) */
+
+.AdminFinance-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.AdminFinance-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.AdminFinance-div-2 {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+
+.AdminFinance-h1-3 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.AdminFinance-p-4 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-top: 0.125rem;
+}
+
+.AdminFinance-button-5 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminFinance-button-5:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+
+.AdminFinance-plus-6 {
+width: 1rem;
+height: 1rem;
+}
+
+.AdminFinance-div-7 {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 1rem;
+}
+
+.AdminFinance-div-8 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+padding: 1.25rem;
+}
+
+.AdminFinance-div-9 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
+.AdminFinance-p-10 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.AdminFinance-div-11 {
+--tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+border-radius: 1rem;
+padding: 1rem;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.AdminFinance-div-12 {
+width: 2.25rem;
+height: 2.25rem;
+border-radius: 0.75rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.AdminFinance-alertcircle-13 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.AdminFinance-div-14 {
+flex: 1 1 0%;
+}
+
+.AdminFinance-p-15 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminFinance-p-16 {
+--tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+margin-top: 0.125rem;
+}
+
+.AdminFinance-button-17 {
+display: flex;
+align-items: center;
+gap: 0.375rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.75rem;
+  line-height: 1rem;
+border-radius: 0.5rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+flex-shrink: 0;
+}
+
+.AdminFinance-button-17:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.AdminFinance-send-18 {
+width: 0.875rem;
+height: 0.875rem;
+}
+
+.AdminFinance-div-19 {
+display: flex;
+flex-direction: column;
+gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .AdminFinance-div-19 {
+  flex-direction: row;
+  }
+}
+
+.AdminFinance-div-20 {
+position: relative;
+flex: 1 1 0%;
+}
+
+.AdminFinance-search-21 {
+position: absolute;
+left: 1rem;
+top: 50%;
+--tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminFinance-input-22 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 2.75rem;
+padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.AdminFinance-input-22:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
+--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+--tw-ring-opacity: 1;
+  --tw-ring-color: rgb(254 243 199 / var(--tw-ring-opacity));
+}
+
+.AdminFinance-div-23 {
+display: flex;
+gap: 0.5rem;
+}
+
+.AdminFinance-div-24 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.AdminFinance-div-25 {
+overflow-x: auto;
+}
+
+.AdminFinance-table-26 {
+width: 100%;
+}
+
+.AdminFinance-tr-27 {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.AdminFinance-th-28 {
+text-align: left;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-transform: uppercase;
+letter-spacing: 0.05em;
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminFinance-tbody-29 > :not([hidden]) ~ :not([hidden]) {
+--tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+--tw-divide-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-divide-opacity));
+}
+
+.AdminFinance-tr-30 {
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminFinance-tr-30:hover {
+background-color: rgb(248 250 252 / 0.5);
+}
+
+.AdminFinance-td-31 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.AdminFinance-td-32 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminFinance-p-33 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.AdminFinance-p-34 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminFinance-td-35 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminFinance-td-36 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.AdminFinance-td-37 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminFinance-button-38 {
+width: 2rem;
+height: 2rem;
+border-radius: 0.5rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.AdminFinance-button-38:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.AdminFinance-download-39 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.AdminFinance-button-40 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.AdminFinance-button-40:hover {
+--tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+}
+
+.AdminFinance-div-41 {
+position: fixed;
+inset: 0px;
+z-index: 50;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+}
+
+.AdminFinance-div-42 {
+position: absolute;
+inset: 0px;
+background-color: rgb(0 0 0 / 0.4);
+}
+
+.AdminFinance-div-43 {
+position: relative;
+width: 100%;
+max-width: 28rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.AdminFinance-div-44 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.AdminFinance-div-45 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.AdminFinance-creditcard-46 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
+}
+
+.AdminFinance-h3-47 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminFinance-button-48 {
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+font-size: 1.25rem;
+  line-height: 1.75rem;
+line-height: 1;
+}
+
+.AdminFinance-button-48:hover {
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminFinance-div-49 {
+padding: 1.5rem;
+}
+
+.AdminFinance-div-49 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.AdminFinance-label-50 {
+display: block;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+margin-bottom: 0.375rem;
+}
+
+.AdminFinance-input-51 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminFinance-input-51:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
+}
+
+.AdminFinance-div-52 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-top-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+gap: 0.75rem;
+}
+
+.AdminFinance-button-53 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-weight: 600;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminFinance-button-53:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.AdminFinance-button-54 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminFinance-button-54:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}

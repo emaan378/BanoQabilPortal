@@ -1,0 +1,819 @@
+/* Semantic styles for AdminInterviews.jsx (converted from Tailwind utility classes) */
+
+.AdminInterviews-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.AdminInterviews-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.AdminInterviews-div-6 {
+display: flex;
+flex-direction: column;
+gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .AdminInterviews-div-6 {
+  flex-direction: row;
+  }
+}
+
+.AdminInterviews-div-7 {
+position: relative;
+flex: 1 1 0%;
+}
+
+.AdminInterviews-search-8 {
+position: absolute;
+left: 1rem;
+top: 50%;
+--tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-input-9 {
+width: 100%;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding-left: 2.75rem;
+padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-input-9:focus {
+outline: 2px solid transparent;
+  outline-offset: 2px;
+--tw-border-opacity: 1;
+  border-color: rgb(245 158 11 / var(--tw-border-opacity));
+--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+--tw-ring-opacity: 1;
+  --tw-ring-color: rgb(254 243 199 / var(--tw-ring-opacity));
+}
+
+.AdminInterviews-div-10 {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
+}
+
+.AdminInterviews-div-11 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.AdminInterviews-div-12 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.AdminInterviews-div-13 {
+overflow-x: auto;
+}
+
+.AdminInterviews-table-14 {
+width: 100%;
+}
+
+.AdminInterviews-tr-15 {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.AdminInterviews-th-16 {
+text-align: left;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-transform: uppercase;
+letter-spacing: 0.05em;
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminInterviews-tbody-17 > :not([hidden]) ~ :not([hidden]) {
+--tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+--tw-divide-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-divide-opacity));
+}
+
+.AdminInterviews-tr-18 {
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminInterviews-tr-18:hover {
+background-color: rgb(248 250 252 / 0.5);
+}
+
+.AdminInterviews-td-19 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.AdminInterviews-div-20 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.AdminInterviews-div-21 {
+width: 2rem;
+height: 2rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+flex-shrink: 0;
+}
+
+.AdminInterviews-p-22 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-p-23 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-td-24 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-span-25 {
+font-size: 10px;
+font-weight: 600;
+padding-left: 0.5rem;
+  padding-right: 0.5rem;
+padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(236 253 245 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-span-26 {
+font-size: 10px;
+font-weight: 600;
+padding-left: 0.5rem;
+  padding-right: 0.5rem;
+padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-div-27 {
+display: flex;
+gap: 0.5rem;
+}
+
+.AdminInterviews-button-28 {
+display: flex;
+align-items: center;
+gap: 0.25rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+padding-left: 0.625rem;
+  padding-right: 0.625rem;
+padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(191 219 254 / var(--tw-border-opacity));
+border-radius: 0.5rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminInterviews-button-28:hover {
+--tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+--tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-calendar-29 {
+width: 0.875rem;
+height: 0.875rem;
+}
+
+.AdminInterviews-button-30 {
+display: flex;
+align-items: center;
+gap: 0.25rem;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+padding-left: 0.625rem;
+  padding-right: 0.625rem;
+padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(167 243 208 / var(--tw-border-opacity));
+border-radius: 0.5rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminInterviews-button-30:hover {
+--tw-text-opacity: 1;
+  color: rgb(4 120 87 / var(--tw-text-opacity));
+--tw-bg-opacity: 1;
+  background-color: rgb(236 253 245 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-button-31 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+display: flex;
+align-items: center;
+gap: 0.125rem;
+padding-left: 0.625rem;
+  padding-right: 0.625rem;
+padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.AdminInterviews-button-31:hover {
+--tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-chevronright-32 {
+width: 0.75rem;
+height: 0.75rem;
+}
+
+.AdminInterviews-div-33 {
+padding: 1.5rem;
+}
+
+.AdminInterviews-div-33 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.AdminInterviews-div-34 {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+margin-bottom: 0.5rem;
+}
+
+.AdminInterviews-div-35 {
+width: 2.5rem;
+height: 2.5rem;
+border-radius: 0.75rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-p-36 {
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminInterviews-div-37 {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+}
+
+.AdminInterviews-div-38 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-top-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+gap: 0.75rem;
+}
+
+.AdminInterviews-button-39 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-weight: 600;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminInterviews-button-39:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-button-40 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminInterviews-button-40:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-div-41 {
+width: 2.5rem;
+height: 2.5rem;
+border-radius: 0.75rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(209 250 229 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-button-42 {
+flex: 1 1 0%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.AdminInterviews-button-42:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-div-43 {
+position: fixed;
+inset: 0px;
+z-index: 50;
+display: flex;
+justify-content: flex-end;
+}
+
+.AdminInterviews-div-44 {
+position: absolute;
+inset: 0px;
+background-color: rgb(0 0 0 / 0.4);
+}
+
+.AdminInterviews-div-45 {
+position: relative;
+width: 100%;
+max-width: 28rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+--tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow-y: auto;
+}
+
+.AdminInterviews-div-46 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: sticky;
+top: 0px;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+z-index: 10;
+}
+
+.AdminInterviews-messagesquare-47 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-h3-48 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminInterviews-button-49 {
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+font-size: 1.25rem;
+  line-height: 1.75rem;
+line-height: 1;
+}
+
+.AdminInterviews-button-49:hover {
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-div-50 {
+padding: 1.5rem;
+}
+
+.AdminInterviews-div-50 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.AdminInterviews-div-51 {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.AdminInterviews-div-52 {
+width: 3.5rem;
+height: 3.5rem;
+border-radius: 1rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.25rem;
+  line-height: 1.75rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-p-53 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.AdminInterviews-div-54 {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.AdminInterviews-p-55 {
+font-weight: 500;
+--tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-div-56 {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+padding-top: 0.5rem;
+}
+
+.AdminInterviews-p-57 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-transform: uppercase;
+letter-spacing: 0.05em;
+}
+
+.AdminInterviews-button-58 {
+width: 100%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.AdminInterviews-button-58:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-calendar-59 {
+width: 1rem;
+height: 1rem;
+}
+
+.AdminInterviews-button-60 {
+width: 100%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.AdminInterviews-button-60:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+}
+
+.AdminInterviews-div-61 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 251 235 / var(--tw-bg-opacity));
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(253 230 138 / var(--tw-border-opacity));
+border-radius: 0.75rem;
+padding: 0.75rem;
+text-align: center;
+}
+
+.AdminInterviews-p-62 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity));
+}
+
+.AdminInterviews-button-63 {
+width: 100%;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-weight: 600;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.AdminInterviews-button-63:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+/* Status badge (converted from interviewStatusConfig Tailwind strings) */
+.AdminInterviews-badge {
+font-size: 10px;
+font-weight: 600;
+padding: 0.125rem 0.5rem;
+border-radius: 9999px;
+display: inline-block;
+}
+
+.AdminInterviews-badge--pending { background-color: #f1f5f9; color: #475569; }
+.AdminInterviews-badge--scheduled { background-color: #eff6ff; color: #2563eb; }
+.AdminInterviews-badge--passed { background-color: #ecfdf5; color: #059669; }
+.AdminInterviews-badge--failed { background-color: #fef2f2; color: #dc2626; }
+
+/* Filter buttons (converted from dynamic Tailwind classes) */
+.AdminInterviews-filter-btn {
+font-size: 0.75rem;
+line-height: 1rem;
+font-weight: 600;
+padding: 0.5rem 0.75rem;
+border-radius: 0.5rem;
+transition-property: all;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 150ms;
+background-color: #fff;
+border: 1px solid #e2e8f0;
+color: #64748b;
+}
+
+.AdminInterviews-filter-btn:hover {
+border-color: #cbd5e1;
+}
+
+.AdminInterviews-filter-btn--active,
+.AdminInterviews-filter-btn--active:hover {
+background-color: #0f172a;
+color: #fff;
+border-color: #0f172a;
+}
+
+/* Textarea (converted from resize-none Tailwind utility) */
+.AdminInterviews-textarea {
+  resize: none;
+}
+
+/* Error / retry row */
+.AdminInterviews-error-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.AdminInterviews-retry-btn {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #2563eb;
+  color: #fff;
+  transition: background-color 150ms;
+}
+
+.AdminInterviews-retry-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Pagination bar */
+.AdminInterviews-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.AdminInterviews-page-info {
+  flex: 1 1 0%;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #94a3b8;
+}
+
+.AdminInterviews-page-btn {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  color: #475569;
+  background-color: #fff;
+  transition: background-color 150ms;
+}
+
+.AdminInterviews-page-btn:hover:not(:disabled) {
+  background-color: #f8fafc;
+}
+
+.AdminInterviews-page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

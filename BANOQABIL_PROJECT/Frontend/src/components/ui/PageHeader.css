@@ -1,0 +1,24 @@
+/* Semantic styles for PageHeader.jsx (converted from Tailwind utility classes) */
+
+.PageHeader-div-1 {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 1rem;
+}
+
+.PageHeader-h1-2 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.PageHeader-p-3 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-top: 0.125rem;
+}

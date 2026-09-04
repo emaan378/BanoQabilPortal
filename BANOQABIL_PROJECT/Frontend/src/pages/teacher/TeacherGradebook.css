@@ -1,0 +1,240 @@
+/* Semantic styles for TeacherGradebook.jsx (converted from Tailwind utility classes) */
+
+.TeacherGradebook-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.TeacherGradebook-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.TeacherGradebook-div-2 {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+
+.TeacherGradebook-h1-3 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.TeacherGradebook-p-4 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-top: 0.125rem;
+}
+
+.TeacherGradebook-button-5 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: rgb(13, 148, 136);
+  color: rgb(255, 255, 255);
+font-weight: 700;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+border-radius: 0.75rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.TeacherGradebook-button-5:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.TeacherGradebook-send-6 {
+width: 1rem;
+height: 1rem;
+}
+
+.TeacherGradebook-div-7 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.TeacherGradebook-div-8 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.TeacherGradebook-barchart3-9 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
+.TeacherGradebook-h2-10 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.TeacherGradebook-div-11 {
+overflow-x: auto;
+}
+
+.TeacherGradebook-table-12 {
+width: 100%;
+}
+
+.TeacherGradebook-tr-13 {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.TeacherGradebook-th-14 {
+text-align: left;
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+text-transform: uppercase;
+letter-spacing: 0.05em;
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+white-space: nowrap;
+}
+
+.TeacherGradebook-tbody-15 > :not([hidden]) ~ :not([hidden]) {
+--tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+--tw-divide-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-divide-opacity));
+}
+
+.TeacherGradebook-tr-16 {
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.TeacherGradebook-tr-16:hover {
+background-color: rgb(248 250 252 / 0.5);
+}
+
+.TeacherGradebook-td-17 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.TeacherGradebook-p-18 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.TeacherGradebook-p-19 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.TeacherGradebook-td-20 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.TeacherGradebook-td-21 {
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.TeacherGradebook-span-22 {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.TeacherGradebook-div-23 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+padding: 1.25rem;
+}
+
+.TeacherGradebook-h3-24 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-bottom: 0.75rem;
+}
+
+.TeacherGradebook-div-25 {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.TeacherGradebook-div-26 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}

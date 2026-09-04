@@ -1,0 +1,262 @@
+/* Semantic styles for FeePayments.jsx (converted from Tailwind utility classes) */
+
+.FeePayments-div-1 {
+padding: 1.5rem;
+width: 100%;
+}
+
+.FeePayments-empty {
+font-size: 0.875rem;
+  line-height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.FeePayments-div-1 > :not([hidden]) ~ :not([hidden]) {
+--tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.FeePayments-h1-2 {
+font-size: 1.5rem;
+  line-height: 2rem;
+font-weight: 800;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.FeePayments-p-3 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+margin-top: 0.125rem;
+}
+
+.FeePayments-div-4 {
+display: grid;
+gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .FeePayments-div-4 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.FeePayments-div-5 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+padding: 1.25rem;
+}
+
+.FeePayments-div-6 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
+.FeePayments-p-7 {
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.FeePayments-div-8 {
+--tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+border-radius: 1rem;
+padding: 1.25rem;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.FeePayments-div-9 {
+width: 2.5rem;
+height: 2.5rem;
+border-radius: 0.75rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.FeePayments-alertcircle-10 {
+width: 1.25rem;
+height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.FeePayments-div-11 {
+flex: 1 1 0%;
+}
+
+.FeePayments-p-12 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.FeePayments-p-13 {
+--tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+margin-top: 0.125rem;
+}
+
+.FeePayments-button-14 {
+flex-shrink: 0;
+padding-left: 1.25rem;
+  padding-right: 1.25rem;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-weight: 700;
+font-size: 0.75rem;
+  line-height: 1rem;
+border-radius: 0.5rem;
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.FeePayments-button-14:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(4 120 87 / var(--tw-bg-opacity));
+}
+
+.FeePayments-div-15 {
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-radius: 1rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+overflow: hidden;
+}
+
+.FeePayments-div-16 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-bottom-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.FeePayments-h2-17 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.FeePayments-div-18 > :not([hidden]) ~ :not([hidden]) {
+--tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+--tw-divide-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-divide-opacity));
+}
+
+.FeePayments-div-19 {
+padding-left: 1.5rem;
+  padding-right: 1.5rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.FeePayments-checkcircle2-20 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.FeePayments-alertcircle-21 {
+width: 1rem;
+height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.FeePayments-div-22 {
+flex: 1 1 0%;
+min-width: 0px;
+}
+
+.FeePayments-p-23 {
+font-weight: 600;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.FeePayments-p-24 {
+font-size: 0.75rem;
+  line-height: 1rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.FeePayments-div-25 {
+text-align: right;
+}
+
+.FeePayments-button-26 {
+flex-shrink: 0;
+width: 2rem;
+height: 2rem;
+border-radius: 0.5rem;
+border-width: 1px;
+--tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.FeePayments-button-26:hover {
+--tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.FeePayments-download-27 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}

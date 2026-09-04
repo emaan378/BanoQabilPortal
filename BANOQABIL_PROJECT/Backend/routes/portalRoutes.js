@@ -1,0 +1,48 @@
+const express = require('express');
+const upload = require('../config/spreadsheetMulter');
+const assignmentUpload = require('../config/multer');
+const { protect, authorizeRoles } = require('../middleware/authMiddleware');
+const { student, teacher } = require('../controllers/portalController');
+const spreadsheetController = require('../controllers/spreadsheetController');
+
+const studentRouter = express.Router();
+studentRouter.use(protect, authorizeRoles('student'));
+studentRouter.get('/dashboard', student.dashboard);
+studentRouter.get('/me', student.profile);
+studentRouter.put('/me', student.updateProfile);
+studentRouter.get('/attendance', student.attendance);
+studentRouter.get('/assignments', student.assignments);
+studentRouter.post('/assignments/:assignmentId/submissions', assignmentUpload.single('file'), student.submitAssignment);
+studentRouter.get('/courses', student.courses);
+studentRouter.get('/fees', student.fees);
+studentRouter.get('/notices', student.notices);
+studentRouter.post('/documents', student.addDocument);
+studentRouter.get('/export', spreadsheetController.studentExport);
+studentRouter.post('/import', upload.single('file'), spreadsheetController.studentImport);
+
+const teacherRouter = express.Router();
+teacherRouter.use(protect, authorizeRoles('teacher'));
+teacherRouter.get('/dashboard', teacher.dashboard);
+teacherRouter.get('/me', teacher.profile);
+teacherRouter.put('/me', teacher.updateProfile);
+teacherRouter.get('/batches', teacher.batches);
+teacherRouter.get('/batches/:batchId/roster', teacher.roster);
+teacherRouter.get('/attendance', teacher.attendance);
+teacherRouter.put('/attendance', teacher.saveAttendance);
+teacherRouter.get('/assignments', teacher.assignments);
+teacherRouter.post('/assignments', teacher.createAssignment);
+teacherRouter.patch('/assignments/:assignmentId', teacher.updateAssignment);
+teacherRouter.get('/assignments/:assignmentId/submissions', teacher.submissions);
+teacherRouter.patch('/submissions/:submissionId/grade', teacher.gradeSubmission);
+teacherRouter.get('/gradebook', teacher.gradebook);
+teacherRouter.put('/gradebook', teacher.saveGrade);
+teacherRouter.get('/performance', teacher.performance);
+teacherRouter.get('/notices', teacher.notices);
+teacherRouter.post('/notices', teacher.createNotice);
+teacherRouter.get('/flags', teacher.flags);
+teacherRouter.post('/flags', teacher.createFlag);
+teacherRouter.patch('/flags/:flagId/resolve', teacher.resolveFlag);
+teacherRouter.get('/export', spreadsheetController.teacherExport);
+teacherRouter.post('/import', upload.single('file'), spreadsheetController.teacherImport);
+
+module.exports = { studentRouter, teacherRouter };

@@ -1,0 +1,306 @@
+/* Semantic styles for TeacherLayout.jsx (converted from Tailwind utility classes) */
+
+.TeacherLayout-div-1 {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.TeacherLayout-div-2 {
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+border-bottom-width: 1px;
+border-color: rgb(51 65 85 / 0.5);
+}
+
+.TeacherLayout-div-3 {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.TeacherLayout-logo-4 {
+width: 1.9rem;
+height: 1.9rem;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+.TeacherLayout-span-6 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+display: block;
+}
+
+.TeacherLayout-span-7 {
+--tw-text-opacity: 1;
+  color: rgb(45 212 191 / var(--tw-text-opacity));
+font-size: 10px;
+}
+
+.TeacherLayout-nav-8 {
+flex: 1 1 0%;
+padding-left: 0.75rem;
+  padding-right: 0.75rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+overflow-y: auto;
+}
+
+.TeacherLayout-p-9 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 10px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+padding-left: 0.5rem;
+  padding-right: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
+.TeacherLayout-itemicon-10 {
+width: 1rem;
+height: 1rem;
+flex-shrink: 0;
+}
+
+.TeacherLayout-span-11 {
+margin-left: auto;
+font-size: 10px;
+font-weight: 700;
+--tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+padding-left: 0.375rem;
+  padding-right: 0.375rem;
+padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+border-radius: 9999px;
+}
+
+.TeacherLayout-div-12 {
+padding-left: 0.75rem;
+  padding-right: 0.75rem;
+padding-top: 1rem;
+  padding-bottom: 1rem;
+border-top-width: 1px;
+border-color: rgb(51 65 85 / 0.5);
+}
+
+.TeacherLayout-div-13 {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+padding-left: 0.5rem;
+  padding-right: 0.5rem;
+margin-bottom: 0.75rem;
+}
+
+.TeacherLayout-div-14 {
+width: 2rem;
+height: 2rem;
+border-radius: 9999px;
+--tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 700;
+flex-shrink: 0;
+}
+
+.TeacherLayout-div-15 {
+min-width: 0px;
+}
+
+.TeacherLayout-p-16 {
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 600;
+overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.TeacherLayout-p-17 {
+--tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+font-size: 10px;
+overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.TeacherLayout-button-18 {
+width: 100%;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+padding-left: 0.75rem;
+  padding-right: 0.75rem;
+padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+border-radius: 0.5rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+font-size: 0.75rem;
+  line-height: 1rem;
+font-weight: 500;
+transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.TeacherLayout-button-18:hover {
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+background-color: rgb(51 65 85 / 0.6);
+}
+
+.TeacherLayout-logout-19 {
+width: 0.875rem;
+height: 0.875rem;
+}
+
+.TeacherLayout-div-20 {
+display: flex;
+height: 100vh;
+--tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+overflow: hidden;
+}
+
+.TeacherLayout-aside-21 {
+display: none;
+flex-direction: column;
+width: 14rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+  .TeacherLayout-aside-21 {
+  display: flex;
+  }
+}
+
+.TeacherLayout-div-22 {
+position: fixed;
+inset: 0px;
+z-index: 50;
+display: flex;
+}
+
+@media (min-width: 1024px) {
+  .TeacherLayout-div-22 {
+  display: none;
+  }
+}
+
+.TeacherLayout-div-23 {
+width: 14rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+display: flex;
+flex-direction: column;
+}
+
+.TeacherLayout-div-24 {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 1rem;
+}
+
+.TeacherLayout-x-25 {
+width: 1.25rem;
+height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.TeacherLayout-div-26 {
+flex: 1 1 0%;
+background-color: rgb(0 0 0 / 0.5);
+}
+
+.TeacherLayout-div-27 {
+flex: 1 1 0%;
+display: flex;
+flex-direction: column;
+min-width: 0px;
+overflow: hidden;
+}
+
+.TeacherLayout-div-28 {
+display: flex;
+align-items: center;
+gap: 0.75rem;
+padding-left: 1rem;
+  padding-right: 1rem;
+padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+border-bottom-width: 1px;
+}
+
+@media (min-width: 1024px) {
+  .TeacherLayout-div-28 {
+  display: none;
+  }
+}
+
+.TeacherLayout-menu-29 {
+width: 1.25rem;
+height: 1.25rem;
+--tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.TeacherLayout-div-30 {
+width: 1.5rem;
+height: 1.5rem;
+border-radius: 0.375rem;
+--tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.TeacherLayout-shield-31 {
+width: 0.875rem;
+height: 0.875rem;
+--tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.TeacherLayout-span-32 {
+font-weight: 700;
+--tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.TeacherLayout-main-33 {
+flex: 1 1 0%;
+overflow-y: auto;
+}
