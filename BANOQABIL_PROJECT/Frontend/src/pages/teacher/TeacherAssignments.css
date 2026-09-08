@@ -505,6 +505,8 @@ justify-content: space-between;
 
 .TeacherAssignments-div-52 {
 padding: 1.5rem;
+max-height: calc(100vh - 14rem);
+overflow-y: auto;
 }
 
 .TeacherAssignments-div-52 > :not([hidden]) ~ :not([hidden]) {
@@ -720,6 +722,42 @@ transition-property: color, background-color, border-color, text-decoration-colo
   height: 0.875rem;
 }
 
+.TeacherAssignments-attachment-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  background: rgb(248 250 252);
+  border-width: 1px;
+  border-color: rgb(226 232 240);
+  border-radius: 0.5rem;
+}
+
+.TeacherAssignments-attachment-meta {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgb(148 163 184);
+  margin-left: 0.25rem;
+}
+
+.TeacherAssignments-attachment-clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 0.375rem;
+  color: rgb(156 163 175);
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.TeacherAssignments-attachment-clear:hover {
+  color: rgb(220 38 38);
+  background-color: rgb(254 242 242);
+}
+
 .TeacherAssignments-note {
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -728,4 +766,27 @@ transition-property: color, background-color, border-color, text-decoration-colo
   border-left-width: 2px;
   border-color: rgb(204 251 241);
   padding-left: 0.5rem;
+}
+
+.TeacherAssignments-extend-btn {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: rgb(217 119 6);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.TeacherAssignments-extend-btn:hover {
+  color: rgb(180 83 9);
+}
+
+.TeacherAssignments-extend-current {
+  background-color: rgb(248 250 252);
+  border-width: 1px;
+  border-color: rgb(226 232 240);
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.75rem;
 }

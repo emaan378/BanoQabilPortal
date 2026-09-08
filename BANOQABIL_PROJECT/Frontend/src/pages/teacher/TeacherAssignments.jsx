@@ -1,6 +1,6 @@
-import { ClipboardList, Download, Plus, Star, Upload, Paperclip, Link2 } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { portalApi } from '@/lib/api.js';
+import { ClipboardList, Download, Plus, Star, Upload, Paperclip, Link2, FileText, X, Clock } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { portalApi, resolveFileUrl } from '@/lib/api.js';
 import './TeacherAssignments.css';
 
 const subStatusStyle = {
@@ -10,7 +10,7 @@ const subStatusStyle = {
   late: 'bg-red-50 text-red-600 border-red-100',
 };
 
-const emptyForm = { title: '', module: 'HTML/CSS', batchId: '', totalMarks: 100, dueAt: '', description: '' };
+const emptyForm = { title: '', module: '', batchId: '', totalMarks: 100, dueAt: '', description: '' };
 
 export default function TeacherAssignments() {
   const [assignments, setAssignments] = useState([]);
@@ -22,6 +22,12 @@ export default function TeacherAssignments() {
   const [form, setForm] = useState(emptyForm);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
+  const [attachment, setAttachment] = useState(null);
+  const fileInputRef = useRef(null);
+  const [extendTarget, setExtendTarget] = useState(null);
+  const [newDeadline, setNewDeadline] = useState('');
+  const [extendError, setExtendError] = useState('');
+  const [extending, setExtending] = useState(false);
 
   const loadAssignments = () => {
     portalApi.teacher.assignments()
@@ -80,8 +86,33 @@ export default function TeacherAssignments() {
 
   const openCreate = () => {
     setError('');
+    setAttachment(null);
+    if (fileInputRef.current) fileInputRef.current.value = '';
     setForm({ ...emptyForm, batchId: batches[0]?._id || batches[0]?.id || '' });
     setShowCreate(true);
+  };
+
+  const openExtendDeadline = (assignment) => {
+    setExtendError('');
+    setExtendTarget(assignment);
+    const currentDate = assignment.dueAt ? new Date(assignment.dueAt).toISOString().split('T')[0] : '';
+    setNewDeadline(currentDate);
+  };
+
+  const handleExtendDeadline = async () => {
+    setExtendError('');
+    if (!newDeadline) return setExtendError('Please select a new deadline.');
+    if (new Date(newDeadline) <= new Date()) return setExtendError('New deadline must be in the future.');
+    setExtending(true);
+    try {
+      await portalApi.teacher.updateAssignment(extendTarget._id, { dueAt: new Date(newDeadline).toISOString() });
+      setExtendTarget(null);
+      loadAssignments();
+    } catch (err) {
+      setExtendError(err.message || 'Failed to update deadline.');
+    } finally {
+      setExtending(false);
+    }
   };
 
   const handlePublish = async () => {
@@ -91,16 +122,18 @@ export default function TeacherAssignments() {
     if (!form.dueAt) return setError('Deadline is required.');
     setSaving(true);
     try {
-      await portalApi.teacher.createAssignment({
-        title: form.title.trim(),
-        module: form.module,
-        batchId: form.batchId,
-        totalMarks: Number(form.totalMarks) || 100,
-        dueAt: new Date(form.dueAt).toISOString(),
-        description: form.description,
-        published: true,
-      });
+      const data = new FormData();
+      data.append('title', form.title.trim());
+      data.append('module', form.module);
+      data.append('batchId', form.batchId);
+      data.append('totalMarks', String(Number(form.totalMarks) || 100));
+      data.append('dueAt', new Date(form.dueAt).toISOString());
+      data.append('description', form.description || '');
+      data.append('published', 'true');
+      if (attachment) data.append('file', attachment);
+      await portalApi.teacher.createAssignment(data);
       setShowCreate(false);
+      setAttachment(null);
       setForm(emptyForm);
       loadAssignments();
     } catch (err) {
@@ -134,9 +167,16 @@ export default function TeacherAssignments() {
                   <div className="TeacherAssignments-div-13"><p className="TeacherAssignments-p-14">{a.title}</p><p className="TeacherAssignments-p-15">{a.module || a.batchName} · Due {dueLabel} · {a.totalMarks} marks</p></div>
                 </div>
                 <button type="button" onClick={() => openReview(a)} className="TeacherAssignments-button-16">Review {pending > 0 ? `(${pending})` : ''} <Download className="TeacherAssignments-download-17" /></button>
+                <button type="button" onClick={() => openExtendDeadline(a)} className="TeacherAssignments-extend-btn"><Clock className="TeacherAssignments-download-17" />Extend Deadline</button>
               </div>
               <div className="TeacherAssignments-div-18">
                 <span className="TeacherAssignments-span-19">{pending > 0 ? `${pending} Pending` : 'No submissions yet'}</span>
+                {a.attachmentUrl && (
+                  <a className="TeacherAssignments-file-link" href={resolveFileUrl(a.attachmentUrl)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <Paperclip className="TeacherAssignments-file-icon" />
+                    {a.attachmentName || 'Attachment'}
+                  </a>
+                )}
               </div>
             </div>
           );
@@ -170,7 +210,7 @@ export default function TeacherAssignments() {
                         {(sub.fileUrl || sub.link || sub.note) && (
                           <div className="TeacherAssignments-attachment">
                             {sub.fileUrl && (
-                              <a className="TeacherAssignments-file-link" href={sub.fileUrl} target="_blank" rel="noreferrer">
+                              <a className="TeacherAssignments-file-link" href={resolveFileUrl(sub.fileUrl)} target="_blank" rel="noreferrer">
                                 <Paperclip className="TeacherAssignments-file-icon" />
                                 {sub.originalName || 'View uploaded file'}
                               </a>
@@ -192,7 +232,7 @@ export default function TeacherAssignments() {
                       )}
                       {sub.status !== 'graded' && (
                         <>
-                          <a className="TeacherAssignments-button-41" href={sub.fileUrl} target="_blank" rel="noreferrer"><Download className="TeacherAssignments-download-42" />{sub.fileUrl ? 'Open / Download file' : 'No file uploaded'}</a>
+                          <a className="TeacherAssignments-button-41" href={resolveFileUrl(sub.fileUrl)} target="_blank" rel="noreferrer"><Download className="TeacherAssignments-download-42" />{sub.fileUrl ? 'Open / Download file' : 'No file uploaded'}</a>
                           <div className="TeacherAssignments-div-43">
                             <div className="TeacherAssignments-div-44">
                               <label className="TeacherAssignments-label-45">Grade (/{selected.totalMarks})</label>
@@ -227,7 +267,7 @@ export default function TeacherAssignments() {
               {error && <p className="text-xs font-semibold text-red-600">{error}</p>}
               <div><label className="TeacherAssignments-label-53" htmlFor='title'>Title</label><input type="text" id='title' value={form.title} onChange={(e) => updateForm('title', e.target.value)} placeholder="e.g. React Component — Todo App" className="TeacherAssignments-input-54" /></div>
               <div className="TeacherAssignments-div-55">
-                <div><label className="TeacherAssignments-label-53" htmlFor='module'>Module</label><select id='module' value={form.module} onChange={(e) => updateForm('module', e.target.value)} className="TeacherAssignments-select-56"><option>HTML/CSS</option><option>JavaScript</option><option>React Basics</option><option>Final Project</option></select></div>
+                <div><label className="TeacherAssignments-label-53" htmlFor='module'>Module</label><input type="text" id='module' value={form.module} onChange={(e) => updateForm('module', e.target.value)} placeholder="e.g. HTML/CSS" className="TeacherAssignments-input-54" /></div>
                 <div><label className="TeacherAssignments-label-53" htmlFor='totalMarks'>Total Marks</label><input type="number" id='totalMarks' value={form.totalMarks} onChange={(e) => updateForm('totalMarks', e.target.value)} className="TeacherAssignments-input-54" /></div>
               </div>
               <div><label className="TeacherAssignments-label-53" htmlFor='batch'>Batch</label><select id='batch' value={form.batchId} onChange={(e) => updateForm('batchId', e.target.value)} className="TeacherAssignments-select-56">
@@ -236,11 +276,51 @@ export default function TeacherAssignments() {
               </select></div>
               <div><label className="TeacherAssignments-label-53" htmlFor='deadline'>Deadline</label><input type="date" name='deadline' id='deadline'	 value={form.dueAt} onChange={(e) => updateForm('dueAt', e.target.value)} className="TeacherAssignments-input-54" /></div>
               <div><label className="TeacherAssignments-label-53" htmlFor='instructions'>Instructions</label><textarea id='instructions' rows={3} value={form.description} onChange={(e) => updateForm('description', e.target.value)} placeholder="Describe the assignment requirements..." className="TeacherAssignments-textarea-57" /></div>
-              <div><label className="TeacherAssignments-label-53" htmlFor='attachment'>Attachment (optional)</label><button type="button" className="TeacherAssignments-button-58"><Upload className="TeacherAssignments-upload-59" /><span className="TeacherAssignments-span-60">Upload PDF or ZIP</span></button></div>
+              <div><label className="TeacherAssignments-label-53" htmlFor='attachment'>Attachment (optional — PDF or ZIP)</label>
+                <input ref={fileInputRef} type="file" accept=".pdf,.zip,application/pdf,application/zip" className="hidden" onChange={(e) => setAttachment(e.target.files?.[0] || null)} />
+                <button type="button" onClick={() => fileInputRef.current?.click()} className="TeacherAssignments-button-58"><Upload className="TeacherAssignments-upload-59" /><span className="TeacherAssignments-span-60">{attachment ? 'Choose another file' : 'Upload PDF or ZIP'}</span></button>
+                {attachment && (
+                  <div className="TeacherAssignments-attachment-preview">
+                    <span className="TeacherAssignments-file-link">
+                      <FileText className="TeacherAssignments-file-icon" />
+                      {attachment.name}
+                      <span className="TeacherAssignments-attachment-meta">{(attachment.size / 1024).toFixed(0)} KB</span>
+                    </span>
+                    <button type="button" onClick={() => { setAttachment(null); if (fileInputRef.current) fileInputRef.current.value = ''; }} className="TeacherAssignments-attachment-clear">
+                      <X className="TeacherAssignments-file-icon" />
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
             <div className="TeacherAssignments-div-61">
               <button type="button" onClick={() => setShowCreate(false)} className="TeacherAssignments-button-62">Cancel</button>
               <button type="button" onClick={handlePublish} disabled={saving} className="TeacherAssignments-button-63">{saving ? 'Publishing…' : 'Publish'}</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {extendTarget && (
+        <div className="TeacherAssignments-div-49">
+          <div className="TeacherAssignments-div-23" onClick={() => setExtendTarget(null)} />
+          <div className="TeacherAssignments-div-50">
+            <div className="TeacherAssignments-div-51">
+              <div className="TeacherAssignments-div-26"><Clock className="TeacherAssignments-clipboardlist-12" /><h3 className="TeacherAssignments-h3-27">Extend Deadline</h3></div>
+              <button type="button" onClick={() => setExtendTarget(null)} className="TeacherAssignments-button-28">&times;</button>
+            </div>
+            <div className="TeacherAssignments-div-52">
+              {extendError && <p className="text-xs font-semibold text-red-600">{extendError}</p>}
+              <div><p className="TeacherAssignments-p-14">{extendTarget.title}</p></div>
+              <div className="TeacherAssignments-extend-current">
+                <p className="TeacherAssignments-label-53">Current Deadline</p>
+                <p className="TeacherAssignments-p-36">{extendTarget.dueAt ? new Date(extendTarget.dueAt).toLocaleDateString() : '—'}</p>
+              </div>
+              <div><label className="TeacherAssignments-label-53" htmlFor='newDeadline'>New Deadline</label><input type="date" id='newDeadline' value={newDeadline} onChange={(e) => setNewDeadline(e.target.value)} className="TeacherAssignments-input-54" /></div>
+            </div>
+            <div className="TeacherAssignments-div-61">
+              <button type="button" onClick={() => setExtendTarget(null)} className="TeacherAssignments-button-62">Cancel</button>
+              <button type="button" onClick={handleExtendDeadline} disabled={extending} className="TeacherAssignments-button-63">{extending ? 'Updating…' : 'Update Deadline'}</button>
             </div>
           </div>
         </div>

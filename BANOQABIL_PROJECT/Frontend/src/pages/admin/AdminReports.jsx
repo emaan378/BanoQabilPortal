@@ -20,19 +20,30 @@ export default function AdminReports() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const load = async () => {
+    try {
+      const res = await reportsApi.overview();
+      setData(res.data);
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const load = async () => {
-      try {
-        const res = await reportsApi.overview();
-        setData(res.data);
-      } catch (error) {
-        toast.error(error.message);
-      } finally {
-        setLoading(false);
-      }
-    };
     load();
-  }, [toast]);
+
+    const interval = setInterval(load, 30000);
+    const onFocus = () => load();
+
+    window.addEventListener('focus', onFocus);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('focus', onFocus);
+    };
+  }, []);
 
   const exportCsv = () => {
     if (!data) return;

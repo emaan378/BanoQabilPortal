@@ -7,15 +7,14 @@ import EmptyState from '@/components/ui/EmptyState.jsx';
 import FormField, { inputCls } from '@/components/ui/FormField.jsx';
 import LoadingSpinner from '@/components/ui/LoadingSpinner.jsx';
 import SpreadsheetActions from '@/components/ui/SpreadsheetActions.jsx';
-import { studentApi, spreadsheetApi } from '@/lib/api.js';
-import { campuses, courses, batches, pipelineStages as regStages } from '@/data/mockData.js';
-import { Users, Plus, Pencil, Trash2, Eye, FileText, Upload, CheckCircle2, Clock, X, Search, ArrowRight, Calendar, ClipboardCheck, CreditCard, CheckCircle } from 'lucide-react';
+import { studentApi, spreadsheetApi, catalogApi } from '@/lib/api.js';
+import { nextActionFor } from '@/lib/workflow.js';
+import { courses, pipelineStages as regStages } from '@/data/mockData.js';
+import { Users, Plus, Pencil, Trash2, Eye, FileText, Upload, CheckCircle2, Clock, X, Search, CheckCircle } from 'lucide-react';
 import './AdminStudents.css';
 
 const LIMIT = 20;
 const courseOptions = [...new Set(courses.map((c) => c.name))].sort();
-const campusOptions = campuses.map((c) => c.name);
-const batchOptions = batches.map((b) => b.name);
 
 const docStatusStyle = {
   verified: { cls: 'verified', icon: CheckCircle2, label: 'Verified' },
@@ -28,14 +27,6 @@ const statusBadgeStyle = {
   scheduled: { cls: 'AdminStudents-status-badge--scheduled', label: 'Scheduled' },
   passed: { cls: 'AdminStudents-status-badge--passed', label: 'Passed' },
   failed: { cls: 'AdminStudents-status-badge--failed', label: 'Failed' },
-};
-
-const nextActionMap = {
-  'registered': { label: 'Schedule Entry Test', icon: Calendar, cls: 'registered' },
-  'test-scheduled': { label: 'Conduct Test', icon: ClipboardCheck, cls: 'test-scheduled' },
-  'interview-passed': { label: 'Verify Fee', icon: CreditCard, cls: 'interview-passed' },
-  'fee-verified': { label: 'Enroll Student', icon: Users, cls: 'fee-verified' },
-  'enrolled': { label: 'Completed', icon: CheckCircle, cls: 'enrolled' },
 };
 
 const emptyForm = { name: '', email: '', phone: '', cnic: '', address: '', campus: '', course: '', batch: '' };
@@ -79,6 +70,20 @@ export default function AdminStudents() {
   const [uploadOpen, setUploadOpen] = useState(false);
   const [uploadForm, setUploadForm] = useState({ docType: '', fileName: '' });
   const [uploading, setUploading] = useState(false);
+  const [campusOptions, setCampusOptions] = useState([]);
+  const [batchOptions, setBatchOptions] = useState([]);
+
+  useEffect(() => {
+    let active = true;
+    Promise.all([catalogApi.campuses.list(), catalogApi.batches.list()])
+      .then(([campusRes, batchRes]) => {
+        if (!active) return;
+        setCampusOptions((campusRes.data || []).map((c) => c.name));
+        setBatchOptions((batchRes.data || []).map((b) => b.name));
+      })
+      .catch(() => { if (active) { setCampusOptions([]); setBatchOptions([]); } });
+    return () => { active = false; };
+  }, []);
 
   const query = useMemo(() => ({ search: search.trim(), page, limit: LIMIT }), [search, page]);
 
@@ -272,7 +277,7 @@ export default function AdminStudents() {
               <thead><tr className="AdminStudents-tr-13">{['Student', 'Student ID', 'CNIC', 'Course', 'Current Stage', 'Next Action', ''].map((h, i) => <th key={h || i} className={`AdminStudents-th ${i === 5 ? 'AdminStudents-th--action' : ''}`}>{h}</th>)}</tr></thead>
               <tbody className="AdminStudents-tbody-14">
                 {students.map((s) => {
-                  const action = nextActionMap[s.stage] || { label: '—', icon: ArrowRight, cls: 'default' };
+                  const action = nextActionFor(s);
                   return (
                   <tr key={s._id} className="AdminStudents-tr-15">
                     <td className="AdminStudents-td-16"><div className="AdminStudents-div-17"><div className="AdminStudents-div-18">{(s.name || '?')[0]}</div><div><p className="AdminStudents-p-19">{s.name}</p><p className="AdminStudents-p-20">{s.phone || s.email || '—'}</p></div></div></td>
@@ -340,7 +345,7 @@ export default function AdminStudents() {
               </div>
               <div className="AdminStudents-div-48">
                 <h4 className="AdminStudents-h4-49">Workflow Status</h4>
-                {(() => { const a = nextActionMap[profileStudent.stage] || { label: 'No action needed', icon: CheckCircle, cls: 'default' }; return (
+                {(() => { const a = nextActionFor(profileStudent) || { label: 'No action needed', icon: CheckCircle, cls: 'default' }; return (
                   <div className={`AdminStudents-action-banner AdminStudents-action-banner--${a.cls}`}><a.icon className="AdminStudents-plus-3" />{a.label}</div>
                 ); })()}
                 <div className="AdminStudents-div-50">

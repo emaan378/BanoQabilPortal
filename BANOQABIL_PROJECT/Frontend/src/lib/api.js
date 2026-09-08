@@ -1,5 +1,14 @@
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1';
 
+// Resolve backend-relative file paths (e.g. /uploads/documents/x.pdf) to a
+// fully-qualified URL pointing at the backend server.
+export function resolveFileUrl(path) {
+  if (!path) return path;
+  if (/^https?:\/\//i.test(path)) return path;
+  const origin = API_BASE_URL.replace(/\/api\/v1\/?$/, '');
+  return `${origin}${path.startsWith('/') ? '' : '/'}${path}`;
+}
+
 export function getToken() {
   return localStorage.getItem('bq_token');
 }
@@ -24,10 +33,13 @@ export function clearAuthSession() {
 
 async function request(path, options = {}) {
   const token = getToken();
-  const headers = { 'Content-Type': 'application/json', ...(options.headers || {}) };
+  const isFormData = typeof FormData !== 'undefined' && options.body instanceof FormData;
+  const headers = isFormData
+    ? { ...(options.headers || {}) }
+    : { 'Content-Type': 'application/json', ...(options.headers || {}) };
   if (token) headers.Authorization = `Bearer ${token}`;
 
-  const response = await fetch(`${API_BASE_URL}${path}`, { ...options, headers });
+  const response = await fetch(`${API_BASE_URL}${path}`, { ...options, headers, cache: 'no-store' });
   const body = await response.json().catch(() => ({}));
 
   if (!response.ok) {
@@ -343,7 +355,7 @@ export const portalApi = {
     attendance: (params = {}) => request(`/portal/teacher/attendance?${new URLSearchParams(params).toString()}`),
     saveAttendance: (data) => request('/portal/teacher/attendance', { method: 'PUT', body: JSON.stringify(data) }),
     assignments: () => request('/portal/teacher/assignments'),
-    createAssignment: (data) => request('/portal/teacher/assignments', { method: 'POST', body: JSON.stringify(data) }),
+    createAssignment: (data) => request('/portal/teacher/assignments', { method: 'POST', body: data }),
     updateAssignment: (assignmentId, data) => request(`/portal/teacher/assignments/${assignmentId}`, { method: 'PATCH', body: JSON.stringify(data) }),
     submissions: (assignmentId) => request(`/portal/teacher/assignments/${assignmentId}/submissions`),
     gradeSubmission: (submissionId, data) => request(`/portal/teacher/submissions/${submissionId}/grade`, { method: 'PATCH', body: JSON.stringify(data) }),

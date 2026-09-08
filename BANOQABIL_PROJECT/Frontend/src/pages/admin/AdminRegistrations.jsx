@@ -31,18 +31,21 @@ export default function AdminRegistrations() {
   const [selected, setSelected] = useState(null);
   const [loading, setLoading] = useState(true);
   const [actionLoading, setActionLoading] = useState(false);
+  const [page, setPage] = useState(1);
+  const [pagination, setPagination] = useState({ page: 1, pages: 0, total: 0 });
 
   const loadRegistrations = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await registrationApi.list({ search });
+      const response = await registrationApi.list({ search, page, limit: 20 });
       setRegistrations(response.data || []);
+      setPagination(response.pagination || { page: 1, pages: 0, total: 0 });
     } catch (error) {
       toast.error(error.status === 401 ? 'Please log in again.' : error.message);
     } finally {
       setLoading(false);
     }
-  }, [search, toast]);
+  }, [search, page, toast]);
 
   useEffect(() => {
     const timer = setTimeout(loadRegistrations, 300);
@@ -97,7 +100,7 @@ export default function AdminRegistrations() {
         <input
           type="text"
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => { setSearch(e.target.value); setPage(1); }}
           placeholder="Search by name, CNIC, or registration ID..."
           className="AdminRegistrations-input-7"
         />
@@ -142,6 +145,13 @@ export default function AdminRegistrations() {
         </div>
         {!loading && registrations.length === 0 && (
           <div className="AdminRegistrations-div-22">No registrations match your filters.</div>
+        )}
+        {!loading && pagination.pages > 1 && (
+          <div className="AdminRegistrations-pagination">
+            <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={pagination.page <= 1} className="AdminRegistrations-page-btn">Previous</button>
+            <div className="AdminRegistrations-page-info">Page {pagination.page} of {pagination.pages} ({pagination.total} total)</div>
+            <button onClick={() => setPage((p) => Math.min(pagination.pages, p + 1))} disabled={pagination.page >= pagination.pages} className="AdminRegistrations-page-btn">Next</button>
+          </div>
         )}
       </div>
 

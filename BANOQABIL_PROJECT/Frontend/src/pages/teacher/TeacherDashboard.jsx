@@ -33,7 +33,7 @@ export default function TeacherDashboard({ navigate }) {
 	const [gradePending, setGradePending] = useState(0);
 	const [assignmentsCount, setAssignmentsCount] = useState(0);
 
-	useEffect(() => {
+	const loadDashboard = () => {
 		Promise.all([
 			portalApi.teacher.dashboard().catch(() => null),
 			portalApi.teacher.batches().catch(() => ({ data: [] })),
@@ -82,6 +82,20 @@ export default function TeacherDashboard({ navigate }) {
 				if (mapped.every((m) => m.value !== undefined)) setStats(mapped);
 			}
 		});
+	};
+
+	useEffect(() => {
+		loadDashboard();
+
+		const interval = setInterval(loadDashboard, 30000);
+		const onFocus = () => loadDashboard();
+
+		window.addEventListener('focus', onFocus);
+
+		return () => {
+			clearInterval(interval);
+			window.removeEventListener('focus', onFocus);
+		};
 	}, []);
 
 	return (

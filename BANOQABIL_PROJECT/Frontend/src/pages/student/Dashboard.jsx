@@ -8,11 +8,9 @@ export default function Dashboard() {
   const [modules, setModules] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    let active = true;
-    Promise.all([portalApi.student.dashboard(), portalApi.student.courses()])
+  const loadDashboard = () => {
+    return Promise.all([portalApi.student.dashboard(), portalApi.student.courses()])
       .then(([dashRes, courseRes]) => {
-        if (!active) return;
         const d = dashRes?.data ?? {};
         const c = courseRes?.data?.data ?? courseRes?.data ?? {};
         setDashboard(d);
@@ -20,9 +18,19 @@ export default function Dashboard() {
       })
       .catch(() => {})
       .finally(() => {
-        if (active) setLoading(false);
+        setLoading(false);
       });
-    return () => { active = false; };
+  };
+
+  useEffect(() => {
+    loadDashboard();
+    const interval = setInterval(loadDashboard, 30000);
+    const onFocus = () => loadDashboard();
+    window.addEventListener('focus', onFocus);
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('focus', onFocus);
+    };
   }, []);
 
   const profile = dashboard?.profile;

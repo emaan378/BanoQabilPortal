@@ -546,3 +546,46 @@ color: #0d9488;
 background-color: #ecfdf5;
 color: #059669;
 }
+
+.AdminRegistrations-pagination {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1rem;
+padding: 0.75rem 1.25rem;
+border-top-width: 1px;
+--tw-border-opacity: 1;
+border-color: rgb(241 245 249 / var(--tw-border-opacity));
+}
+
+.AdminRegistrations-page-btn {
+padding: 0.4rem 0.9rem;
+font-size: 0.75rem;
+line-height: 1rem;
+font-weight: 600;
+--tw-text-opacity: 1;
+color: rgb(100 116 139 / var(--tw-text-opacity));
+background-color: rgb(248 250 252 / 1);
+border-width: 1px;
+--tw-border-opacity: 1;
+border-color: rgb(226 232 240 / var(--tw-border-opacity));
+border-radius: 0.5rem;
+cursor: pointer;
+transition: background-color 0.15s, color 0.15s;
+}
+
+.AdminRegistrations-page-btn:hover:not(:disabled) {
+color: rgb(217 119 6 / 1);
+border-color: rgb(252 211 77 / 1);
+}
+
+.AdminRegistrations-page-btn:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+
+.AdminRegistrations-page-info {
+font-size: 0.75rem;
+line-height: 1rem;
+color: rgb(148 163 184 / 1);
+}

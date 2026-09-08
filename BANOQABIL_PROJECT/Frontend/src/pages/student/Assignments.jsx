@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ClipboardList, Upload, CheckCircle2, Clock, AlertCircle, X, Link2, FileText, Paperclip } from 'lucide-react';
 import './Assignments.css';
-import { portalApi } from '@/lib/api.js';
+import { portalApi, resolveFileUrl } from '@/lib/api.js';
 
 const statusMap = {
   submitted: { icon: Clock, cls: 'bg-blue-50 text-blue-600 border-blue-100', label: 'Submitted' },
@@ -116,10 +116,16 @@ export default function Assignments() {
                       <p className="Assignments-p-14">
                         {a.module ? `${a.module} · ` : ''}Due {new Date(a.dueAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}
                       </p>
+                      {a.attachmentUrl && (
+                        <a className="Assignments-file-link" href={resolveFileUrl(a.attachmentUrl)} target="_blank" rel="noreferrer">
+                          <Paperclip className="Assignments-sicon-17" />
+                          {a.attachmentName || 'Attachment'}
+                        </a>
+                      )}
                       {a.submission && (
                         <div className="Assignments-files">
                           {a.submission.fileUrl && (
-                            <a className="Assignments-file-link" href={a.submission.fileUrl} target="_blank" rel="noreferrer">
+                            <a className="Assignments-file-link" href={resolveFileUrl(a.submission.fileUrl)} target="_blank" rel="noreferrer">
                               <Paperclip className="Assignments-sicon-17" />
                               {a.submission.originalName || 'View file'}
                             </a>

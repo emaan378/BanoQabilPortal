@@ -41,22 +41,32 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(true);
   const [resolvingId, setResolvingId] = useState(null);
 
-  useEffect(() => {
-    const fetchDashboardStats = async () => {
-      try {
-        const res = await dashboardApi.stats();
-        setMetrics(res.metrics || {});
-        setLists(res.lists || EMPTY_LISTS);
-        setRecentRegistrations(res.recentRegistrations || []);
-      } catch (err) {
-        toast.error(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchDashboardStats = async () => {
+    try {
+      const res = await dashboardApi.stats();
+      setMetrics(res.metrics || {});
+      setLists(res.lists || EMPTY_LISTS);
+      setRecentRegistrations(res.recentRegistrations || []);
+    } catch (err) {
+      toast.error(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchDashboardStats();
-  }, [toast]);
+
+    const interval = setInterval(fetchDashboardStats, 30000);
+    const onFocus = () => fetchDashboardStats();
+
+    window.addEventListener('focus', onFocus);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('focus', onFocus);
+    };
+  }, []);
 
   const cards = [
     { icon: Users, label: 'Total Students', value: metrics.totalStudents, iconBg: 'emerald', data: lists.students, badge: (item) => stageLabel(item.stage) },

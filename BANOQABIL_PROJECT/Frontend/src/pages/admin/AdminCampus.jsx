@@ -7,23 +7,25 @@ import PageHeader from '@/components/ui/PageHeader.jsx';
 import EmptyState from '@/components/ui/EmptyState.jsx';
 import FormField, { inputCls } from '@/components/ui/FormField.jsx';
 import { catalogApi, studentApi, teacherApi } from '@/lib/api.js';
+import { nextActionFor } from '@/lib/workflow.js';
 import { pipelineStages as regStages } from '@/data/mockData.js';
-import { MapPin, Plus, Pencil, Trash2, ChevronRight, BookOpen, Layers, ArrowLeft, Building2, Users, Shield, UserPlus, ClipboardCheck, Layers3, CreditCard, Eye, Search, ArrowRight, Calendar, CheckCircle, X } from 'lucide-react';
+import { MapPin, Plus, Pencil, Trash2, ChevronRight, BookOpen, Layers, ArrowLeft, Building2, Users, Shield, UserPlus, ClipboardCheck, Layers3, CreditCard, Eye, Search, X } from 'lucide-react';
 import { setStudentContext } from '@/lib/studentContext.js';
-
-const nextActionMap = {
-  'registered': { label: 'Schedule Entry Test', icon: Calendar, cls: 'text-blue-600 bg-blue-50' },
-  'test-scheduled': { label: 'Conduct Test', icon: ClipboardCheck, cls: 'text-amber-600 bg-amber-50' },
-  'interview-passed': { label: 'Verify Fee', icon: CreditCard, cls: 'text-teal-600 bg-teal-50' },
-  'fee-verified': { label: 'Enroll Student', icon: Users, cls: 'text-emerald-600 bg-emerald-50' },
-  'enrolled': { label: 'Completed', icon: CheckCircle, cls: 'text-slate-500 bg-slate-100' },
-};
 
 const formatCnic = (value) => {
   const digits = value.replace(/\D/g, '').slice(0, 13);
   if (digits.length <= 5) return digits;
   if (digits.length <= 12) return `${digits.slice(0, 5)}-${digits.slice(5)}`;
   return `${digits.slice(0, 5)}-${digits.slice(5, 12)}-${digits.slice(12)}`;
+};
+
+const actionClsMap = {
+  registered: 'text-blue-600 bg-blue-50',
+  'test-scheduled': 'text-amber-600 bg-amber-50',
+  'interview-passed': 'text-teal-600 bg-teal-50',
+  'fee-verified': 'text-emerald-600 bg-emerald-50',
+  enrolled: 'text-slate-500 bg-slate-100',
+  default: 'text-slate-400 bg-slate-50',
 };
 
 const readableError = (error) => (Array.isArray(error.details) && error.details.length ? error.details.join(', ') : error.message);
@@ -602,14 +604,14 @@ export default function AdminCampus({ navigate }) {
                 <thead><tr className="bg-slate-50 border-b border-slate-100">{['Student', 'CNIC', 'Course', 'Current Stage', 'Next Action', ''].map((h, i) => <th key={h || i} className={`text-left text-xs font-bold text-slate-500 uppercase tracking-wider px-5 py-3 ${i === 5 ? 'w-px' : ''}`}>{h}</th>)}</tr></thead>
                 <tbody className="divide-y divide-slate-50">
                   {filteredStudents.map((s) => {
-                    const action = nextActionMap[s.stage] || { label: '—', icon: ArrowRight, cls: 'text-slate-400 bg-slate-50' };
+                    const action = nextActionFor(s);
                     return (
                     <tr key={s._id} className="hover:bg-slate-50/50 transition-colors">
                       <td className="px-5 py-3"><div className="flex items-center gap-2.5"><div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-xs font-bold text-emerald-600 flex-shrink-0">{(s.name || '?')[0]}</div><div><p className="text-sm font-semibold text-slate-900">{s.name}</p><p className="text-xs text-slate-400">{s.phone || s.email || '—'}</p></div></div></td>
                       <td className="px-5 py-3 text-sm text-slate-600 whitespace-nowrap">{s.cnic || '—'}</td>
                       <td className="px-5 py-3 text-sm text-slate-600">{s.course || '—'}</td>
                       <td className="px-5 py-3"><span className={`text-[10px] font-semibold px-2.5 py-1 rounded-full whitespace-nowrap ${regStages.find((r) => r.key === s.stage)?.color || 'bg-slate-100 text-slate-400'}`}>{regStages.find((r) => r.key === s.stage)?.label || s.stage}</span></td>
-                      <td className="px-5 py-3"><div className={`inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg whitespace-nowrap ${action.cls}`}><action.icon className="w-3.5 h-3.5 flex-shrink-0" />{action.label}</div></td>
+                      <td className="px-5 py-3"><div className={`inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1.5 rounded-lg whitespace-nowrap ${actionClsMap[action.cls] || actionClsMap.default}`}><action.icon className="w-3.5 h-3.5 flex-shrink-0" />{action.label}</div></td>
                       <td className="px-5 py-3"><div className="flex gap-1">
                         <button onClick={() => openStudentProfile(s)} className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50" title="View Profile"><Eye className="w-3.5 h-3.5 text-slate-500" /></button>
                         <button onClick={() => openEditStudent(s)} className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50" title="Edit"><Pencil className="w-3.5 h-3.5 text-slate-500" /></button>
